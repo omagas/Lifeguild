@@ -1,0 +1,65 @@
+2015/03/10 11:42:52 INFO  TEST log
+ 2015/03/13 16:22:25 INFO  From:D:/Life/400/  To:D:/Life/400/RESP/
+ 2015/03/13 16:22:25 INFO  initial 36  JDBC driver OK
+ 2015/03/13 16:22:28 ERROR java.sql.SQLException: Line 1: Incorrect syntax near '('. Query: SELECT TOP (1) Serial_No FROM CASNT_SerialNo_Def_Tb WHERE (YY = ?) AND (MM = ?) AND (DD = ?) Parameters: [14, 03, 13]
+ 2015/03/13 16:23:56 INFO  From:D:/Life/400/  To:D:/Life/400/RESP/
+ 2015/03/13 16:23:56 INFO  initial 36  JDBC driver OK
+ 2015/03/13 16:23:56 ERROR java.sql.SQLException: Invalid object name 'CASNT_SerialNo_Def_Tb'. Query: SELECT Serial_No FROM CASNT_SerialNo_Def_Tb WHERE (YY = ?) AND (MM = ?) AND (DD = ?) Parameters: [14, 03, 13]
+ 2015/03/13 16:29:48 INFO  From:D:/Life/400/  To:D:/Life/400/RESP/
+ 2015/03/13 16:29:48 INFO  initial 36  JDBC driver OK
+ 2015/03/13 16:29:48 ERROR java.sql.SQLException: Incorrect syntax near the keyword 'FROM'. Query: SELECT * FROM FROM dbo.CASNT_SerialNo_Def_Tb WHERE (YY = ?) AND (MM = ?) AND (DD = ?) Parameters: [14, 03, 13]
+ 2015/03/13 16:30:18 INFO  From:D:/Life/400/  To:D:/Life/400/RESP/
+ 2015/03/13 16:30:18 INFO  initial 36  JDBC driver OK
+ 2015/03/13 16:30:18 ERROR java.sql.SQLException: Invalid object name 'dbo.CASNT_SerialNo_Def_Tb'. Query: select * from dbo.CASNT_SerialNo_Def_Tb WHERE (YY = ?) AND (MM = ?) AND (DD = ?) Parameters: [14, 03, 13]
+ 2015/03/13 16:32:28 INFO  From:D:/Life/400/  To:D:/Life/400/RESP/
+ 2015/03/13 16:32:28 INFO  initial 36  JDBC driver OK
+ 2015/03/13 16:32:28 ERROR java.sql.SQLException: Invalid object name 'CASNT_SerialNo_Def_Tb'. Query: select * from CASNT_SerialNo_Def_Tb where YY = ? and MM = ? and DD = ? Parameters: [14, 03, 13]
+ 2015/03/13 16:33:39 INFO  From:D:/Life/400/  To:D:/Life/400/RESP/
+ 2015/03/13 16:33:39 INFO  initial 36  JDBC driver OK
+ 2015/03/13 16:33:39 ERROR java.sql.SQLException: Wrong number of parameters: expected 0, was given 3 Query: select Serial_No from CASNT_SerialNo_Def_Tb Parameters: [14, 03, 13]
+ 2015/03/13 16:34:38 INFO  From:D:/Life/400/  To:D:/Life/400/RESP/
+ 2015/03/13 16:34:38 INFO  initial 36  JDBC driver OK
+ 2015/03/13 16:34:39 ERROR java.sql.SQLException: Invalid object name 'CASNT_SerialNo_Def_Tb'. Query: select Serial_No from CASNT_SerialNo_Def_Tb where YY = ? and MM = ? and DD = ? Parameters: [14, 03, 13]
+ 2015/03/13 16:36:48 INFO  From:D:/Life/400/  To:D:/Life/400/RESP/
+ 2015/03/13 16:36:48 INFO  initial 36  JDBC driver OK
+ 2015/03/13 16:36:48 ERROR java.sql.SQLException: Invalid object name 'CASNT_SerialNo_Def_Tb'. Query: select dbo.Serial_No from CASNT_SerialNo_Def_Tb where YY = ? and MM = ? and DD = ? Parameters: [14, 03, 13]
+ 2015/03/13 16:41:58 INFO  From:D:/Life/400/  To:D:/Life/400/RESP/
+ 2015/03/13 16:41:58 INFO  initial 36  JDBC driver OK
+ 2015/03/13 16:42:00 ERROR java.sql.SQLException: Invalid object name 'dbo.CASNT_SerialNo_Def_Tb'. Query: select Serial_No from dbo.CASNT_SerialNo_Def_Tb where YY = ? and MM = ? and DD = ? Parameters: [14, 03, 13]
+ 2015/03/13 16:42:18 INFO  From:D:/Life/400/  To:D:/Life/400/RESP/
+ 2015/03/13 16:42:18 INFO  initial 36  JDBC driver OK
+ 2015/03/13 16:42:18 ERROR java.sql.SQLException: Invalid object name 'dbo.CASNT_SerialNo_Def_Tb'. Query: select Serial_No from [dbo].[CASNT_SerialNo_Def_Tb] where YY = ? and MM = ? and DD = ? Parameters: [14, 03, 13]
+ 2015/03/13 16:45:44 INFO  From:D:/Life/400/  To:D:/Life/400/RESP/
+ 2015/03/13 16:45:44 INFO  initial 36  JDBC driver OK
+ 2015/03/13 16:45:44 ERROR java.sql.SQLException: Invalid object name 'dbo.CASNT_PA_AccuAmt_Tb'. Query: select Serial_No from [dbo].[CASNT_PA_AccuAmt_Tb] where YY = ? and MM = ? and DD = ? Parameters: [14, 03, 13]
+ 2015/03/13 16:47:11 INFO  From:D:/Life/400/  To:D:/Life/400/RESP/
+ 2015/03/13 16:47:11 INFO  initial 36  JDBC driver OK
+ 2015/03/13 16:47:11 ERROR java.sql.SQLException: Invalid object name 'CommDB_Trial.CASNT_PA_AccuAmt_Tb'. Query: select Serial_No from [CommDB_Trial].[CASNT_PA_AccuAmt_Tb] where YY = ? and MM = ? and DD = ? Parameters: [14, 03, 13]
+ 2015/03/13 16:50:49 INFO  From:D:/Life/400/  To:D:/Life/400/RESP/
+ 2015/03/13 16:50:49 INFO  initial 36  JDBC driver OK
+ 2015/03/13 16:50:49 ERROR java.sql.SQLException: Invalid object name 'CommDB_Trial.CASNT_PA_AccuAmt_Tb'. Query: select Serial_No from [CommDB_Trial].[CASNT_PA_AccuAmt_Tb] where YY = ? and MM = ? and DD = ? Parameters: [14, 03, 13]
+ 2015/03/13 16:52:51 INFO  From:D:/Life/400/  To:D:/Life/400/RESP/
+ 2015/03/13 16:52:51 INFO  initial 36  JDBC driver OK
+ 2015/03/13 16:52:51 ERROR java.sql.SQLException: Invalid object name 'CASNT_PA_AccuAmt_Tb'. Query: select Serial_No from [CASNT_PA_AccuAmt_Tb] where YY = ? and MM = ? and DD = ? Parameters: [14, 03, 13]
+ 2015/03/13 16:58:34 INFO  From:D:/Life/400/  To:D:/Life/400/RESP/
+ 2015/03/13 16:58:34 INFO  initial 36  JDBC driver OK
+ 2015/03/13 16:59:00 INFO  From:D:/Life/400/  To:D:/Life/400/RESP/
+ 2015/03/13 16:59:00 INFO  initial 36  JDBC driver OK
+ 2015/03/13 17:17:00 INFO  From:D:/Life/400/  To:D:/Life/400/RESP/
+ 2015/03/13 17:17:00 INFO  initial 36  JDBC driver OK
+ 2015/03/13 17:17:01 ERROR java.sql.SQLException: Invalid object name 'CASNT_PA_AccuAmt_Tb'. Query: select Serial_No from CASNT_PA_AccuAmt_Tb where YY = ? Parameters: [14]
+ 2015/03/13 17:18:23 INFO  From:D:/Life/400/  To:D:/Life/400/RESP/
+ 2015/03/13 17:18:23 INFO  initial 36  JDBC driver OK
+ 2015/03/13 17:18:23 ERROR java.sql.SQLException: Invalid object name 'CASNT_Log_Transfer_Tb'. Query: select Serial_No from CASNT_Log_Transfer_Tb where YY = ? Parameters: [14]
+ 2015/03/13 17:21:52 INFO  From:D:/Life/400/  To:D:/Life/400/RESP/
+ 2015/03/13 17:21:52 INFO  initial 36  JDBC driver OK
+ 2015/03/13 17:21:53 ERROR java.sql.SQLException: 無效的資料行名稱 'YY'。 Query: select Serial_No from CASNT_Log_Transfer_Tb where YY = ? Parameters: [14]
+ 2015/03/13 17:22:44 INFO  From:D:/Life/400/  To:D:/Life/400/RESP/
+ 2015/03/13 17:22:44 INFO  initial 36  JDBC driver OK
+ 2015/03/13 17:27:07 INFO  From:D:/Life/400/  To:D:/Life/400/RESP/
+ 2015/03/13 17:27:07 INFO  initial 36  JDBC driver OK
+ 2015/03/13 17:33:44 INFO  From:D:/Life/400/  To:D:/Life/400/RESP/
+ 2015/03/13 17:33:44 INFO  initial 36  JDBC driver OK
+ 2015/03/13 17:46:26 INFO  From:D:/Life/400/  To:D:/Life/400/RESP/
+ 2015/03/13 17:46:26 INFO  initial 36  JDBC driver OK
+ 
