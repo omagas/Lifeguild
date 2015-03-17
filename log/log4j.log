@@ -62,4 +62,90 @@
  2015/03/13 17:33:44 INFO  initial 36  JDBC driver OK
  2015/03/13 17:46:26 INFO  From:D:/Life/400/  To:D:/Life/400/RESP/
  2015/03/13 17:46:26 INFO  initial 36  JDBC driver OK
+ 2015/03/16 13:36:28 INFO  From:D:/Life/400/  To:D:/Life/400/RESP/
+ 2015/03/16 13:36:30 INFO  initial 36  JDBC driver OK
+ 2015/03/16 13:38:27 INFO  From:D:/Life/400/  To:D:/Life/400/RESP/
+ 2015/03/16 13:38:27 INFO  initial 36  JDBC driver OK
+ 2015/03/16 15:00:24 INFO  From:D:/Life/400/  To:D:/Life/400/RESP/
+ 2015/03/16 15:00:25 INFO  initial 36  JDBC driver OK
+ 2015/03/16 15:00:40 INFO  From:D:/Life/400/  To:D:/Life/400/RESP/
+ 2015/03/16 15:00:40 INFO  initial 36  JDBC driver OK
+ 2015/03/16 15:49:18 INFO  From:D:/Life/400/  To:D:/Life/400/RESP/
+ 2015/03/16 15:49:18 INFO  initial 36  JDBC driver OK
+ 2015/03/16 15:49:18 INFO  ...true...is not empty
+ 2015/03/16 15:49:18 INFO  ...Serial_No:1
+ 2015/03/16 15:50:05 INFO  From:D:/Life/400/  To:D:/Life/400/RESP/
+ 2015/03/16 15:50:05 INFO  initial 36  JDBC driver OK
+ 2015/03/16 15:50:05 INFO  ...true...is not empty
+ 2015/03/16 15:50:05 INFO  ...Serial_No:1
+ 2015/03/16 15:50:05 ERROR java.lang.NullPointerException
+ 2015/03/16 15:53:53 INFO  From:D:/Life/400/  To:D:/Life/400/RESP/
+ 2015/03/16 15:53:53 INFO  initial 36  JDBC driver OK
+ 2015/03/16 15:53:53 INFO  ...true...is not empty
+ 2015/03/16 15:53:53 INFO  ...Serial_No:1
+ 2015/03/16 15:53:53 ERROR java.lang.NullPointerException
+ 2015/03/16 15:54:29 INFO  From:D:/Life/400/  To:D:/Life/400/RESP/
+ 2015/03/16 15:54:29 INFO  initial 36  JDBC driver OK
+ 2015/03/16 15:54:30 INFO  ...true...is not empty
+ 2015/03/16 15:54:30 INFO  ...Serial_No:1
+ 2015/03/16 15:54:30 ERROR java.lang.NullPointerException
+ 2015/03/16 15:56:23 INFO  From:D:/Life/400/  To:D:/Life/400/RESP/
+ 2015/03/16 15:56:23 INFO  initial 36  JDBC driver OK
+ 2015/03/16 15:56:23 INFO  ...true...is not empty
+ 2015/03/16 15:56:23 INFO  ...Serial_No:1
+ 2015/03/16 16:01:53 INFO  From:D:/Life/400/  To:D:/Life/400/RESP/
+ 2015/03/16 16:01:53 INFO  initial 36  JDBC driver OK
+ 2015/03/16 16:01:54 INFO  ...true...is not empty
+ 2015/03/16 16:01:54 INFO  ...Serial_No:1
+ 2015/03/16 19:22:14 INFO  From:D:/Life/400/  To:D:/Life/400/RESP/
+ 2015/03/16 19:22:15 INFO  initial 36  JDBC driver OK
+ 2015/03/16 19:22:20 ERROR java.sql.SQLException: Wrong number of parameters: expected 4, was given 3 Query: select Serial_No from CASNT_SerialNo_Def_Tb where YY = ? and MM=? and DD=? and File_Typ=? Parameters: [15, 03, 16]
+ 2015/03/16 19:22:20 ERROR java.sql.SQLException: Wrong number of parameters: expected 4, was given 3 Query: select Serial_No from CASNT_SerialNo_Def_Tb where YY = ? and MM=? and DD=? and File_Typ=? Parameters: [15, 03, 16]
+ 2015/03/16 19:22:37 INFO  From:D:/Life/400/  To:D:/Life/400/RESP/
+ 2015/03/16 19:22:37 INFO  initial 36  JDBC driver OK
+ 2015/03/16 19:22:38 INFO  ....false...is empty
+ 2015/03/16 19:37:09 INFO  From:D:/Life/400/  To:D:/Life/400/RESP/
+ 2015/03/16 19:37:09 INFO  initial 36  JDBC driver OK
+ 2015/03/16 19:37:09 INFO  ....false...is empty
+ 2015/03/16 19:37:39 INFO  From:D:/Life/400/  To:D:/Life/400/RESP/
+ 2015/03/16 19:37:39 INFO  initial 36  JDBC driver OK
+ 2015/03/16 19:37:39 INFO  ....false...is empty
+ 2015/03/17 11:48:57 INFO  From:D:/Life/400/  To:D:/Life/400/RESP/
+ 2015/03/17 11:48:57 INFO  initial 36  JDBC driver OK
+ 2015/03/17 11:48:58 INFO  ....false...is empty
+ 2015/03/17 11:49:35 INFO  From:D:/Life/400/  To:D:/Life/400/RESP/
+ 2015/03/17 11:49:35 INFO  initial 36  JDBC driver OK
+ 2015/03/17 11:49:36 INFO  ....false...is empty
+ 2015/03/17 14:32:27 INFO  From:D:/Life/400/  To:D:/Life/400/RESP/
+ 2015/03/17 14:32:27 INFO  initial 36  JDBC driver OK
+ 2015/03/17 14:32:28 INFO  ....false...is empty
+ 2015/03/17 14:32:28 INFO  updateSQL=INSERT INTO [dbo].[CASNT_SerialNo_Def_Tb]([YY],[MM],[DD],[File_Typ],[Serial_No])VALUES(?,?,?,?,?), params={15,03,16,IA,1}
+ 2015/03/17 14:32:28 ERROR java.sql.SQLException: Unable to convert between java.lang.Character and JAVA_OBJECT. Query: INSERT INTO [dbo].[CASNT_SerialNo_Def_Tb]([YY],[MM],[DD],[File_Typ],[Serial_No])VALUES(?,?,?,?,?) Parameters: [15, 03, 16, IA, 1]
+ 2015/03/17 14:32:28 ERROR java.sql.SQLException: Unable to convert between java.lang.Character and JAVA_OBJECT. Query: INSERT INTO [dbo].[CASNT_SerialNo_Def_Tb]([YY],[MM],[DD],[File_Typ],[Serial_No])VALUES(?,?,?,?,?) Parameters: [15, 03, 16, IA, 1]
+ 2015/03/17 14:35:22 INFO  From:D:/Life/400/  To:D:/Life/400/RESP/
+ 2015/03/17 14:35:22 INFO  initial 36  JDBC driver OK
+ 2015/03/17 14:35:23 INFO  ....false...is empty
+ 2015/03/17 14:35:23 INFO  updateSQL=INSERT INTO [dbo].[CASNT_SerialNo_Def_Tb]([YY],[MM],[DD],[File_Typ],[Serial_No])VALUES(?,?,?,?,?), params={15,03,16,IA,1}
+ 2015/03/17 14:35:41 INFO  From:D:/Life/400/  To:D:/Life/400/RESP/
+ 2015/03/17 14:35:41 INFO  initial 36  JDBC driver OK
+ 2015/03/17 14:35:41 INFO  ...true...is not empty
+ 2015/03/17 14:35:41 INFO  ...Serial_No:1
+ 2015/03/17 14:35:41 INFO  updateSQL=INSERT INTO [dbo].[CASNT_SerialNo_Def_Tb]([YY],[MM],[DD],[File_Typ],[Serial_No])VALUES(?,?,?,?,?), params={15,03,16,IA,2}
+ 2015/03/17 14:35:41 ERROR java.sql.SQLException: 違反 PRIMARY KEY 條件約束 'PK_CASNT_SerialNo_Def_Tb'。無法在物件 'dbo.CASNT_SerialNo_Def_Tb' 中插入重複的索引鍵。重複的索引鍵值是 (15, 03, 16, IA)。 Query: INSERT INTO [dbo].[CASNT_SerialNo_Def_Tb]([YY],[MM],[DD],[File_Typ],[Serial_No])VALUES(?,?,?,?,?) Parameters: [15, 03, 16, IA, 2]
+ 2015/03/17 14:35:41 ERROR java.sql.SQLException: 違反 PRIMARY KEY 條件約束 'PK_CASNT_SerialNo_Def_Tb'。無法在物件 'dbo.CASNT_SerialNo_Def_Tb' 中插入重複的索引鍵。重複的索引鍵值是 (15, 03, 16, IA)。 Query: INSERT INTO [dbo].[CASNT_SerialNo_Def_Tb]([YY],[MM],[DD],[File_Typ],[Serial_No])VALUES(?,?,?,?,?) Parameters: [15, 03, 16, IA, 2]
+ 2015/03/17 14:39:08 INFO  From:D:/Life/400/  To:D:/Life/400/RESP/
+ 2015/03/17 14:39:08 INFO  initial 36  JDBC driver OK
+ 2015/03/17 14:39:08 INFO  ...true...is not empty
+ 2015/03/17 14:39:08 INFO  ...Serial_No:1
+ 2015/03/17 14:39:08 INFO  updateSQL=UPDATE [dbo].[CASNT_SerialNo_Def_Tb] SET [Serial_No] = ? WHERE  YY = ? and MM=? and DD=? and File_Typ=?, params={2,15,03,16,IA}
+ 2015/03/17 14:42:24 INFO  From:D:/Life/400/  To:D:/Life/400/RESP/
+ 2015/03/17 14:42:24 INFO  initial 36  JDBC driver OK
+ 2015/03/17 14:42:24 INFO  ...true...is not empty
+ 2015/03/17 14:42:24 INFO  ...Serial_No:2
+ 2015/03/17 14:42:24 INFO  updateSQL=UPDATE [dbo].[CASNT_SerialNo_Def_Tb] SET [Serial_No] = ? WHERE  YY = ? and MM=? and DD=? and File_Typ=?, params={3,15,03,16,IA}
+ 2015/03/17 14:54:01 INFO  From:D:/Life/400/  To:D:/Life/400/RESP/
+ 2015/03/17 14:54:01 INFO  initial 36  JDBC driver OK
+ 2015/03/17 14:54:02 INFO  ...true...is not empty
+ 2015/03/17 14:54:02 INFO  ...Serial_No:3
+ 2015/03/17 14:54:02 INFO  updateSQL=UPDATE [dbo].[CASNT_SerialNo_Def_Tb] SET [Serial_No] = ? WHERE  YY = ? and MM=? and DD=? and File_Typ=?, params={4,15,03,16,IA}
  
