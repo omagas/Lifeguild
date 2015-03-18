@@ -148,4 +148,99 @@
  2015/03/17 14:54:02 INFO  ...true...is not empty
  2015/03/17 14:54:02 INFO  ...Serial_No:3
  2015/03/17 14:54:02 INFO  updateSQL=UPDATE [dbo].[CASNT_SerialNo_Def_Tb] SET [Serial_No] = ? WHERE  YY = ? and MM=? and DD=? and File_Typ=?, params={4,15,03,16,IA}
+ 2015/03/17 17:03:44 INFO  From:D:/Life/400/  To:D:/Life/400/RESP/
+ 2015/03/17 17:04:49 INFO  From:D:/Life/400/  To:D:/Life/400/RESP/
+ 2015/03/17 17:04:49 INFO  initial 36  JDBC driver OK
+ 2015/03/17 17:04:49 INFO  ....false...is empty
+ 2015/03/17 17:04:49 INFO  updateSQL=INSERT INTO [dbo].[CASNT_SerialNo_Def_Tb]([YY],[MM],[DD],[File_Typ],[Serial_No])VALUES(?,?,?,?,?), params={15,03,17,IA,1}
+ 2015/03/17 17:04:49 INFO  ...true...is not empty
+ 2015/03/17 17:04:49 INFO  ...Serial_No:1
+ 2015/03/17 17:04:49 INFO  updateSQL=UPDATE [dbo].[CASNT_SerialNo_Def_Tb] SET [Serial_No] = ? WHERE  YY = ? and MM=? and DD=? and File_Typ=?, params={2,15,03,17,IA}
+ 2015/03/17 17:04:50 INFO  ...true...is not empty
+ 2015/03/17 17:04:50 INFO  ...Serial_No:2
+ 2015/03/17 17:04:50 INFO  updateSQL=UPDATE [dbo].[CASNT_SerialNo_Def_Tb] SET [Serial_No] = ? WHERE  YY = ? and MM=? and DD=? and File_Typ=?, params={3,15,03,17,IA}
+ 2015/03/17 17:04:50 INFO  ...true...is not empty
+ 2015/03/17 17:04:50 INFO  ...Serial_No:3
+ 2015/03/17 17:04:50 INFO  updateSQL=UPDATE [dbo].[CASNT_SerialNo_Def_Tb] SET [Serial_No] = ? WHERE  YY = ? and MM=? and DD=? and File_Typ=?, params={4,15,03,17,IA}
+ 2015/03/17 17:05:36 INFO  From:D:/Life/400/  To:D:/Life/400/RESP/
+ 2015/03/17 17:05:50 INFO  From:D:/Life/400/  To:D:/Life/400/RESP/
+ 2015/03/17 17:05:50 INFO  initial 36  JDBC driver OK
+ 2015/03/17 17:05:50 INFO  ...true...is not empty
+ 2015/03/17 17:05:50 INFO  ...Serial_No:4
+ 2015/03/17 17:05:50 INFO  updateSQL=UPDATE [dbo].[CASNT_SerialNo_Def_Tb] SET [Serial_No] = ? WHERE  YY = ? and MM=? and DD=? and File_Typ=?, params={5,15,03,17,IA}
+ 2015/03/17 17:05:50 INFO  ...true...is not empty
+ 2015/03/17 17:05:50 INFO  ...Serial_No:5
+ 2015/03/17 17:05:50 INFO  updateSQL=UPDATE [dbo].[CASNT_SerialNo_Def_Tb] SET [Serial_No] = ? WHERE  YY = ? and MM=? and DD=? and File_Typ=?, params={6,15,03,17,IA}
+ 2015/03/17 17:05:51 INFO  ...true...is not empty
+ 2015/03/17 17:05:51 INFO  ...Serial_No:6
+ 2015/03/17 17:05:51 INFO  updateSQL=UPDATE [dbo].[CASNT_SerialNo_Def_Tb] SET [Serial_No] = ? WHERE  YY = ? and MM=? and DD=? and File_Typ=?, params={7,15,03,17,IA}
+ 2015/03/17 17:05:51 INFO  ...true...is not empty
+ 2015/03/17 17:05:51 INFO  ...Serial_No:7
+ 2015/03/17 17:05:51 INFO  updateSQL=UPDATE [dbo].[CASNT_SerialNo_Def_Tb] SET [Serial_No] = ? WHERE  YY = ? and MM=? and DD=? and File_Typ=?, params={8,15,03,17,IA}
+ 2015/03/17 17:28:15 INFO  From:D:/Life/400/  To:D:/Life/400/RESP/
+ 2015/03/17 17:28:40 INFO  From:D:/Life/400/  To:D:/Life/400/RESP/
+ 2015/03/17 17:28:40 INFO  initial 36  JDBC driver OK
+ 2015/03/17 17:28:41 INFO  ...true...is not empty
+ 2015/03/17 17:28:41 INFO  ...Serial_No:8
+ 2015/03/17 17:28:41 INFO  updateSQL=UPDATE [dbo].[CASNT_SerialNo_Def_Tb] SET [Serial_No] = ? WHERE  YY = ? and MM=? and DD=? and File_Typ=?, params={9,15,03,17,IA}
+ 2015/03/17 17:28:41 INFO  ...true...is not empty
+ 2015/03/17 17:28:41 INFO  ...Serial_No:9
+ 2015/03/17 17:28:41 INFO  updateSQL=UPDATE [dbo].[CASNT_SerialNo_Def_Tb] SET [Serial_No] = ? WHERE  YY = ? and MM=? and DD=? and File_Typ=?, params={10,15,03,17,IA}
+ 2015/03/17 17:28:41 INFO  ...true...is not empty
+ 2015/03/17 17:28:41 INFO  ...Serial_No:10
+ 2015/03/17 17:28:41 INFO  updateSQL=UPDATE [dbo].[CASNT_SerialNo_Def_Tb] SET [Serial_No] = ? WHERE  YY = ? and MM=? and DD=? and File_Typ=?, params={11,15,03,17,IA}
+ 2015/03/17 17:28:41 INFO  ...true...is not empty
+ 2015/03/17 17:28:41 INFO  ...Serial_No:11
+ 2015/03/17 17:28:41 INFO  updateSQL=UPDATE [dbo].[CASNT_SerialNo_Def_Tb] SET [Serial_No] = ? WHERE  YY = ? and MM=? and DD=? and File_Typ=?, params={12,15,03,17,IA}
+ 2015/03/17 17:29:22 INFO  From:D:/Life/400/  To:D:/Life/400/RESP/
+ 2015/03/17 17:29:34 INFO  From:D:/Life/400/  To:D:/Life/400/RESP/
+ 2015/03/17 17:29:34 INFO  initial 36  JDBC driver OK
+ 2015/03/17 17:29:34 INFO  ...true...is not empty
+ 2015/03/17 17:29:34 INFO  ...Serial_No:12
+ 2015/03/17 17:29:34 INFO  updateSQL=UPDATE [dbo].[CASNT_SerialNo_Def_Tb] SET [Serial_No] = ? WHERE  YY = ? and MM=? and DD=? and File_Typ=?, params={13,15,03,17,IA}
+ 2015/03/17 17:29:34 INFO  ...true...is not empty
+ 2015/03/17 17:29:34 INFO  ...Serial_No:13
+ 2015/03/17 17:29:34 INFO  updateSQL=UPDATE [dbo].[CASNT_SerialNo_Def_Tb] SET [Serial_No] = ? WHERE  YY = ? and MM=? and DD=? and File_Typ=?, params={14,15,03,17,IA}
+ 2015/03/17 17:34:19 INFO  From:D:/Life/400/  To:D:/Life/400/RESP/
+ 2015/03/17 17:34:31 INFO  From:D:/Life/400/  To:D:/Life/400/RESP/
+ 2015/03/17 17:34:31 INFO  initial 36  JDBC driver OK
+ 2015/03/17 17:34:32 INFO  ...true...is not empty
+ 2015/03/17 17:34:32 INFO  ...Serial_No:14
+ 2015/03/17 17:34:32 INFO  updateSQL=UPDATE [dbo].[CASNT_SerialNo_Def_Tb] SET [Serial_No] = ? WHERE  YY = ? and MM=? and DD=? and File_Typ=?, params={15,15,03,17,IA}
+ 2015/03/17 17:34:32 INFO  ...true...is not empty
+ 2015/03/17 17:34:32 INFO  ...Serial_No:15
+ 2015/03/17 17:34:32 INFO  updateSQL=UPDATE [dbo].[CASNT_SerialNo_Def_Tb] SET [Serial_No] = ? WHERE  YY = ? and MM=? and DD=? and File_Typ=?, params={16,15,03,17,IA}
+ 2015/03/17 17:34:32 INFO  ...true...is not empty
+ 2015/03/17 17:34:32 INFO  ...Serial_No:16
+ 2015/03/17 17:34:32 INFO  updateSQL=UPDATE [dbo].[CASNT_SerialNo_Def_Tb] SET [Serial_No] = ? WHERE  YY = ? and MM=? and DD=? and File_Typ=?, params={17,15,03,17,IA}
+ 2015/03/17 17:34:32 INFO  ...true...is not empty
+ 2015/03/17 17:34:32 INFO  ...Serial_No:17
+ 2015/03/17 17:34:32 INFO  updateSQL=UPDATE [dbo].[CASNT_SerialNo_Def_Tb] SET [Serial_No] = ? WHERE  YY = ? and MM=? and DD=? and File_Typ=?, params={18,15,03,17,IA}
+ 2015/03/17 17:34:59 INFO  From:D:/Life/400/  To:D:/Life/400/RESP/
+ 2015/03/17 17:34:59 INFO  initial 36  JDBC driver OK
+ 2015/03/17 17:34:59 INFO  ...true...is not empty
+ 2015/03/17 17:34:59 INFO  ...Serial_No:18
+ 2015/03/17 17:34:59 INFO  updateSQL=UPDATE [dbo].[CASNT_SerialNo_Def_Tb] SET [Serial_No] = ? WHERE  YY = ? and MM=? and DD=? and File_Typ=?, params={19,15,03,17,IA}
+ 2015/03/17 17:34:59 INFO  ...true...is not empty
+ 2015/03/17 17:34:59 INFO  ...Serial_No:19
+ 2015/03/17 17:34:59 INFO  updateSQL=UPDATE [dbo].[CASNT_SerialNo_Def_Tb] SET [Serial_No] = ? WHERE  YY = ? and MM=? and DD=? and File_Typ=?, params={20,15,03,17,IA}
+ 2015/03/17 17:34:59 INFO  ...true...is not empty
+ 2015/03/17 17:34:59 INFO  ...Serial_No:20
+ 2015/03/17 17:34:59 INFO  updateSQL=UPDATE [dbo].[CASNT_SerialNo_Def_Tb] SET [Serial_No] = ? WHERE  YY = ? and MM=? and DD=? and File_Typ=?, params={21,15,03,17,IA}
+ 2015/03/17 17:34:59 INFO  ...true...is not empty
+ 2015/03/17 17:34:59 INFO  ...Serial_No:21
+ 2015/03/17 17:34:59 INFO  updateSQL=UPDATE [dbo].[CASNT_SerialNo_Def_Tb] SET [Serial_No] = ? WHERE  YY = ? and MM=? and DD=? and File_Typ=?, params={22,15,03,17,IA}
+ 2015/03/18 15:25:19 INFO  From:D:/Life/400/  To:D:/Life/400/RESP/
+ 2015/03/18 15:25:19 INFO  initial 36  JDBC driver OK
+ 2015/03/18 15:25:19 INFO  ....false...is empty
+ 2015/03/18 15:25:19 INFO  updateSQL=INSERT INTO [dbo].[CASNT_SerialNo_Def_Tb]([YY],[MM],[DD],[File_Typ],[Serial_No])VALUES(?,?,?,?,?), params={15,03,18,IA,1}
+ 2015/03/18 15:25:19 INFO  ...true...is not empty
+ 2015/03/18 15:25:19 INFO  ...Serial_No:1
+ 2015/03/18 15:25:19 INFO  updateSQL=UPDATE [dbo].[CASNT_SerialNo_Def_Tb] SET [Serial_No] = ? WHERE  YY = ? and MM=? and DD=? and File_Typ=?, params={2,15,03,18,IA}
+ 2015/03/18 15:25:19 INFO  ...true...is not empty
+ 2015/03/18 15:25:19 INFO  ...Serial_No:2
+ 2015/03/18 15:25:19 INFO  updateSQL=UPDATE [dbo].[CASNT_SerialNo_Def_Tb] SET [Serial_No] = ? WHERE  YY = ? and MM=? and DD=? and File_Typ=?, params={3,15,03,18,IA}
+ 2015/03/18 15:25:19 INFO  ...true...is not empty
+ 2015/03/18 15:25:19 INFO  ...Serial_No:3
+ 2015/03/18 15:25:19 INFO  updateSQL=UPDATE [dbo].[CASNT_SerialNo_Def_Tb] SET [Serial_No] = ? WHERE  YY = ? and MM=? and DD=? and File_Typ=?, params={4,15,03,18,IA}
  
