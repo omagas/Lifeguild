@@ -26,6 +26,7 @@ public class FTPUtil {
     public static void downloadDirectory(FTPClient ftpClient, String parentDir,
             String currentDir, String saveDir) throws IOException {
         String dirToList = parentDir;
+        
         if (!currentDir.equals("")) {
             dirToList += "/" + currentDir;
         }
@@ -71,6 +72,16 @@ public class FTPUtil {
                             newDirPath);
                     if (success) {
                         System.out.println("DOWNLOADED the file: " + filePath);
+                        
+                        //if download success then delete the file.
+                        boolean deleted=ftpClient.deleteFile(filePath);
+                        if(deleted){
+                           System.out.println("delete the file: " + filePath); 
+                        }else{
+                           System.out.println("COULD NOT delete the file: "
+                                + filePath);
+                        }
+                        
                     } else {
                         System.out.println("COULD NOT download the file: "
                                 + filePath);

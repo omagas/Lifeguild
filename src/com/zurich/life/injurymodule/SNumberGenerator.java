@@ -25,7 +25,7 @@ public class SNumberGenerator {
        private String dd;
        private static Logger logger = Logger.getLogger(LifeInjuryModule.class);
 
-    public SNumberGenerator() {
+    public  SNumberGenerator() {
         
         
        SimpleDateFormat sdf = new SimpleDateFormat("yy-MM-dd");

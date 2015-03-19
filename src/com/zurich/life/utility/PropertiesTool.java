@@ -14,7 +14,7 @@ public class PropertiesTool {
 //	    properties.load(Thread.currentThread().getContextClassLoader().getResourceAsStream(propertiesFile));
 
 		// ?�properties?�jar�??properties�???��?
-		properties.load(new FileInputStream(System.getProperty("user.dir") + "/properties/" + propertiesFile));
+		properties.load(new FileInputStream(System.getProperty("user.dir") + "/src/" + propertiesFile));
 
 		return properties;
 	}

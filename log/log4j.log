@@ -243,4 +243,54 @@
  2015/03/18 15:25:19 INFO  ...true...is not empty
  2015/03/18 15:25:19 INFO  ...Serial_No:3
  2015/03/18 15:25:19 INFO  updateSQL=UPDATE [dbo].[CASNT_SerialNo_Def_Tb] SET [Serial_No] = ? WHERE  YY = ? and MM=? and DD=? and File_Typ=?, params={4,15,03,18,IA}
+ 2015/03/19 15:23:36 INFO  From:D:/Life/400/  To:D:/Life/400/RESP/
+ 2015/03/19 15:23:36 INFO  initial 36  JDBC driver OK
+ 2015/03/19 15:23:37 INFO  ....false...is empty
+ 2015/03/19 15:23:37 INFO  updateSQL=INSERT INTO [dbo].[CASNT_SerialNo_Def_Tb]([YY],[MM],[DD],[File_Typ],[Serial_No])VALUES(?,?,?,?,?), params={null,null,null,IA,1}
+ 2015/03/19 15:23:40 ERROR java.sql.SQLException: 無法插入 NULL 值到資料行 'YY'，資料表 'CommDB_Trial.dbo.CASNT_SerialNo_Def_Tb'; 資料行不得有 Null。INSERT 失敗。 Query: INSERT INTO [dbo].[CASNT_SerialNo_Def_Tb]([YY],[MM],[DD],[File_Typ],[Serial_No])VALUES(?,?,?,?,?) Parameters: [null, null, null, IA, 1]
+ 2015/03/19 15:23:40 INFO  ....false...is empty
+ 2015/03/19 15:23:40 INFO  updateSQL=INSERT INTO [dbo].[CASNT_SerialNo_Def_Tb]([YY],[MM],[DD],[File_Typ],[Serial_No])VALUES(?,?,?,?,?), params={null,null,null,IA,1}
+ 2015/03/19 15:23:40 ERROR java.sql.SQLException: 無法插入 NULL 值到資料行 'YY'，資料表 'CommDB_Trial.dbo.CASNT_SerialNo_Def_Tb'; 資料行不得有 Null。INSERT 失敗。 Query: INSERT INTO [dbo].[CASNT_SerialNo_Def_Tb]([YY],[MM],[DD],[File_Typ],[Serial_No])VALUES(?,?,?,?,?) Parameters: [null, null, null, IA, 1]
+ 2015/03/19 15:30:25 INFO  From:D:/Life/400/  To:D:/Life/400/RESP/
+ 2015/03/19 15:30:26 INFO  initial 36  JDBC driver OK
+ 2015/03/19 15:30:26 INFO  ....false...is empty
+ 2015/03/19 15:30:26 INFO  updateSQL=INSERT INTO [dbo].[CASNT_SerialNo_Def_Tb]([YY],[MM],[DD],[File_Typ],[Serial_No])VALUES(?,?,?,?,?), params={null,null,null,IA,1}
+ 2015/03/19 15:30:26 ERROR java.sql.SQLException: 無法插入 NULL 值到資料行 'YY'，資料表 'CommDB_Trial.dbo.CASNT_SerialNo_Def_Tb'; 資料行不得有 Null。INSERT 失敗。 Query: INSERT INTO [dbo].[CASNT_SerialNo_Def_Tb]([YY],[MM],[DD],[File_Typ],[Serial_No])VALUES(?,?,?,?,?) Parameters: [null, null, null, IA, 1]
+ 2015/03/19 15:30:26 INFO  ....false...is empty
+ 2015/03/19 15:30:26 INFO  updateSQL=INSERT INTO [dbo].[CASNT_SerialNo_Def_Tb]([YY],[MM],[DD],[File_Typ],[Serial_No])VALUES(?,?,?,?,?), params={null,null,null,IA,1}
+ 2015/03/19 15:30:26 ERROR java.sql.SQLException: 無法插入 NULL 值到資料行 'YY'，資料表 'CommDB_Trial.dbo.CASNT_SerialNo_Def_Tb'; 資料行不得有 Null。INSERT 失敗。 Query: INSERT INTO [dbo].[CASNT_SerialNo_Def_Tb]([YY],[MM],[DD],[File_Typ],[Serial_No])VALUES(?,?,?,?,?) Parameters: [null, null, null, IA, 1]
+ 2015/03/19 15:34:09 INFO  From:D:/Life/400/  To:D:/Life/400/RESP/
+ 2015/03/19 15:37:04 INFO  From:D:/Life/400/  To:D:/Life/400/RESP/
+ 2015/03/19 15:37:04 INFO  initial 36  JDBC driver OK
+ 2015/03/19 15:37:04 INFO  ....false...is empty
+ 2015/03/19 15:37:04 INFO  updateSQL=INSERT INTO [dbo].[CASNT_SerialNo_Def_Tb]([YY],[MM],[DD],[File_Typ],[Serial_No])VALUES(?,?,?,?,?), params={null,null,null,IA,1}
+ 2015/03/19 15:37:04 ERROR java.sql.SQLException: 無法插入 NULL 值到資料行 'YY'，資料表 'CommDB_Trial.dbo.CASNT_SerialNo_Def_Tb'; 資料行不得有 Null。INSERT 失敗。 Query: INSERT INTO [dbo].[CASNT_SerialNo_Def_Tb]([YY],[MM],[DD],[File_Typ],[Serial_No])VALUES(?,?,?,?,?) Parameters: [null, null, null, IA, 1]
+ 2015/03/19 15:37:04 INFO  ....false...is empty
+ 2015/03/19 15:37:04 INFO  updateSQL=INSERT INTO [dbo].[CASNT_SerialNo_Def_Tb]([YY],[MM],[DD],[File_Typ],[Serial_No])VALUES(?,?,?,?,?), params={null,null,null,IA,1}
+ 2015/03/19 15:37:04 ERROR java.sql.SQLException: 無法插入 NULL 值到資料行 'YY'，資料表 'CommDB_Trial.dbo.CASNT_SerialNo_Def_Tb'; 資料行不得有 Null。INSERT 失敗。 Query: INSERT INTO [dbo].[CASNT_SerialNo_Def_Tb]([YY],[MM],[DD],[File_Typ],[Serial_No])VALUES(?,?,?,?,?) Parameters: [null, null, null, IA, 1]
+ 2015/03/19 15:37:52 INFO  From:D:/Life/400/  To:D:/Life/400/RESP/
+ 2015/03/19 15:37:52 INFO  initial 36  JDBC driver OK
+ 2015/03/19 15:37:52 INFO  ....false...is empty
+ 2015/03/19 15:37:52 INFO  updateSQL=INSERT INTO [dbo].[CASNT_SerialNo_Def_Tb]([YY],[MM],[DD],[File_Typ],[Serial_No])VALUES(?,?,?,?,?), params={15,03,19,IA,1}
+ 2015/03/19 15:37:52 INFO  ...true...is not empty
+ 2015/03/19 15:37:52 INFO  ...Serial_No:1
+ 2015/03/19 15:37:52 INFO  updateSQL=UPDATE [dbo].[CASNT_SerialNo_Def_Tb] SET [Serial_No] = ? WHERE  YY = ? and MM=? and DD=? and File_Typ=?, params={2,15,03,19,IA}
+ 2015/03/19 17:47:10 INFO  From:D:/Life/400/  To:D:/Life/400/RESP/
+ 2015/03/19 17:47:11 INFO  initial 36  JDBC driver OK
+ 2015/03/19 17:47:12 INFO  ...true...is not empty
+ 2015/03/19 17:47:12 INFO  ...Serial_No:2
+ 2015/03/19 17:47:12 INFO  updateSQL=UPDATE [dbo].[CASNT_SerialNo_Def_Tb] SET [Serial_No] = ? WHERE  YY = ? and MM=? and DD=? and File_Typ=?, params={3,15,03,19,IA}
+ 2015/03/19 17:49:24 INFO  From:D:/Life/400/  To:D:/Life/400/RESP/
+ 2015/03/19 17:49:24 INFO  initial 36  JDBC driver OK
+ 2015/03/19 17:49:24 INFO  ...true...is not empty
+ 2015/03/19 17:49:24 INFO  ...Serial_No:3
+ 2015/03/19 17:49:25 INFO  updateSQL=UPDATE [dbo].[CASNT_SerialNo_Def_Tb] SET [Serial_No] = ? WHERE  YY = ? and MM=? and DD=? and File_Typ=?, params={4,15,03,19,IA}
+ 2015/03/19 17:56:06 INFO  From:D:/Life/400/  To:D:/Life/400/RESP/
+ 2015/03/19 17:56:06 INFO  initial 36  JDBC driver OK
+ 2015/03/19 17:56:06 INFO  ...true...is not empty
+ 2015/03/19 17:56:06 INFO  ...Serial_No:4
+ 2015/03/19 17:56:06 INFO  updateSQL=UPDATE [dbo].[CASNT_SerialNo_Def_Tb] SET [Serial_No] = ? WHERE  YY = ? and MM=? and DD=? and File_Typ=?, params={5,15,03,19,IA}
+ 2015/03/19 17:56:06 INFO  ...true...is not empty
+ 2015/03/19 17:56:06 INFO  ...Serial_No:5
+ 2015/03/19 17:56:06 INFO  updateSQL=UPDATE [dbo].[CASNT_SerialNo_Def_Tb] SET [Serial_No] = ? WHERE  YY = ? and MM=? and DD=? and File_Typ=?, params={6,15,03,19,IA}
  
