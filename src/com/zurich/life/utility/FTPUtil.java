@@ -24,7 +24,7 @@ import org.apache.commons.net.ftp.FTPFile;
 public class FTPUtil {
 
     public static void downloadDirectory(FTPClient ftpClient, String parentDir,
-            String currentDir, String saveDir) throws IOException {
+            String currentDir, String saveDir) throws IOException {//parentDir=remote_edir ,saveDir=loc_dir
         String dirToList = parentDir;
         
         if (!currentDir.equals("")) {

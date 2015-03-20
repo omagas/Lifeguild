@@ -108,9 +108,9 @@ public class FTPUploadController {
 					ftpClient.logout();
 					ftpClient.disconnect();
 				}
-			} catch (IOException ex) {
-				ex.printStackTrace();
-			}
+                        } catch (IOException ex) {
+                                ex.printStackTrace();
+                        }
 		}        
     }
     

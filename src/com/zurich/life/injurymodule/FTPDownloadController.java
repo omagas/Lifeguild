@@ -41,6 +41,7 @@ public class FTPDownloadController {
         int port = Integer.parseInt(pt.getProperty("ftp.port"));
         String user = pt.getProperty("ftp.user").toString();
         String pass = pt.getProperty("ftp.pass").toString();
+        String remoteDirPath = pt.getProperty("ftp.remoteDirPath").toString();
 
 
      
@@ -55,14 +56,14 @@ public class FTPDownloadController {
             // log out and disconnect from the server
 
     // directory on the server to be downloaded
-        String remoteDirPath = "/batN06";
+        remoteDirPath = "/"+remoteDirPath;
 
     // directory where the files will be saved
-        String saveDirPath = "D:/Life/400/RESP";//D:\Life\400\RESP
+        String saveDirPath = pt.getProperty("ftp.saveDirPath");//D:\Life\400\RESP
         FTPUtil ftpu=new FTPUtil();
 
         ftpu.downloadDirectory(ftpClient, remoteDirPath, "", saveDirPath);
-        
+
         
         
         ftpClient.logout();

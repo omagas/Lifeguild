@@ -55,8 +55,9 @@ public class LifeInjuryModule {
   
        String NewfileNm_endfix= String.format("%04d", NewSerialNum);//數字補零
        
-       file_array_name=toIA(oldFileDest,newFileDest,NewSerialNum);//move file to 400/ prepare to upload the life FTP
-        FTPUploadController fTPUploadController = new FTPUploadController();
+       file_array_name=toIA(oldFileDest,newFileDest,NewSerialNum);//move file to 400/ prepare for uploading to life FTP
+       toMA(oldFileDest,newFileDest,NewfileNm_endfix);
+       FTPUploadController fTPUploadController = new FTPUploadController();
        
        int count=0;
        for(String lists:file_array_name){//for list depend by num of files.
@@ -81,11 +82,23 @@ public class LifeInjuryModule {
                     
         }       
 
-       
+        //********
+        //Step3.Sleep for a moment.
+        //*******
+                try {
+                    System.out.println("I'm going to bed");
+                    Thread.sleep(10000);
+                    System.out.println("I wake up");
+                } catch (InterruptedException ex) {
+                    java.util.logging.Logger.getLogger(LifeInjuryModule.class.getName()).log(Level.SEVERE, null, ex);
+                }       
 
-        
+        //********
+        //Step4.Download feedback files from ftp Location D:/Life/400/RESP
+        //*******
+        FTPDownloadController fTPDownloadController = new FTPDownloadController();        
        
-       toMA(oldFileDest,newFileDest,NewfileNm_endfix);
+       
          
  
    } 
@@ -158,23 +171,6 @@ public class LifeInjuryModule {
         //Step1.Module Process move file then mofify file name.
         //*******
         lifeInjuryModule.Process400();
-
-        
-        
-        //********
-        //Step3.Sleep for a moment.
-        //*******
-        //        try {
-        //            System.out.println("I'm going to bed");
-        //            Thread.sleep(10000);
-        //            System.out.println("I wake up");
-        //        } catch (InterruptedException ex) {
-        //            java.util.logging.Logger.getLogger(LifeInjuryModule.class.getName()).log(Level.SEVERE, null, ex);
-        //        }
-        //********
-        //Step4.Download feedback files from ftp Location D:/Life/400/RESP
-        //*******
-        //FTPDownloadController fTPDownloadController = new FTPDownloadController();
 
         
     }

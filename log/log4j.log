@@ -365,4 +365,10 @@
  2015/03/20 11:38:16 INFO  ...Serial_No:13
  2015/03/20 11:38:16 INFO  updateSQL=UPDATE [dbo].[CASNT_SerialNo_Def_Tb] SET [Serial_No] = ? WHERE  YY = ? and MM=? and DD=? and File_Typ=?, params={14,15,03,20,IA}
  2015/03/20 11:38:16 INFO  ArrayList..[1]IA0014.txt
+ 2015/03/20 17:19:47 INFO  From:D:/Life/400/SEND/  To:D:/Life/400/
+ 2015/03/20 17:19:47 INFO  initial 36  JDBC driver OK
+ 2015/03/20 17:19:47 INFO  ...true...is not empty
+ 2015/03/20 17:19:47 INFO  ...Serial_No:14
+ 2015/03/20 17:19:47 INFO  updateSQL=UPDATE [dbo].[CASNT_SerialNo_Def_Tb] SET [Serial_No] = ? WHERE  YY = ? and MM=? and DD=? and File_Typ=?, params={15,15,03,20,IA}
+ 2015/03/20 17:19:47 INFO  ArrayList..[1]IA0015.txt
  
