@@ -22,6 +22,9 @@ import java.util.Date;
 
 import com.zurich.life.utility.*;
 import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.concurrent.CountDownLatch;
 import org.omg.CORBA.TIMEOUT;
 
 
@@ -37,28 +40,53 @@ public class LifeInjuryModule {
      * @param args the command line arguments
      */
     private static Logger logger = Logger.getLogger(LifeInjuryModule.class);
-    private String UpfileName;
+
     
     
    private void Process400(){
        //int OldSerialNum=0;
        int NewSerialNum=0;
-       String[] UpNameArray=new String[100];
-       String oldFileDest ="D:/Life/400/";
-       String newFileDest ="D:/Life/400/RESP/";
+       ArrayList<String> file_array_name;
+       String oldFileDest ="D:/Life/400/SEND/";
+       String newFileDest ="D:/Life/400/";
        logger.info("From:"+oldFileDest+"  To:"+newFileDest);
        
 
   
-       String NewfileNm_endfix= String.format("%04d", NewSerialNum);  //數字補零
+       String NewfileNm_endfix= String.format("%04d", NewSerialNum);//數字補零
        
-       UpNameArray=toIA(oldFileDest,newFileDest,NewSerialNum);
-       System.out.println("UpNameArray:"+UpNameArray[0]);
-       System.out.println("UpNameArray:"+UpNameArray[1]);
-       System.out.println("UpNameArray:"+UpNameArray[2]);
+       file_array_name=toIA(oldFileDest,newFileDest,NewSerialNum);//move file to 400/ prepare to upload the life FTP
+        FTPUploadController fTPUploadController = new FTPUploadController();
+       
+       int count=0;
+       for(String lists:file_array_name){//for list depend by num of files.
+            
+            count++;
+            System.out.println("ArrayList.."+"["+count+"]"+lists);
+            logger.info("ArrayList.."+"["+count+"]"+lists);
+            
+        //********
+        //Step2.Upload files to ftp
+        //*******
+
+            try {
+                fTPUploadController.setLocalFile(lists);//set file name to fTPUploadController
+                fTPUploadController.controller();//exe fTPUploadController
+                
+            } catch (FileNotFoundException ex) {
+                java.util.logging.Logger.getLogger(LifeInjuryModule.class.getName()).log(Level.SEVERE, null, ex);
+            } catch (IOException ex) {
+                java.util.logging.Logger.getLogger(LifeInjuryModule.class.getName()).log(Level.SEVERE, null, ex);
+            }
+                    
+        }       
+
+       
+
+        
        
        toMA(oldFileDest,newFileDest,NewfileNm_endfix);
-       
+         
  
    } 
    
@@ -66,10 +94,13 @@ public class LifeInjuryModule {
    
    
 
-   private String[] toIA(String oldFileDest,String newFileDest,int New_Serial_Num){//取號number跟PA相同
+   private ArrayList<String> toIA(String oldFileDest,String newFileDest,int New_Serial_Num){//move file to 400/ prepare to upload the life FTP
        int file_count=0;
        FileIO ioDealer=new FileIO();
-       String[] UpNameArray=new String[100];
+       ArrayList<String> up_file_list=new ArrayList<String>();
+
+       //new HashMap<String,String>();  
+       
 
        //String NewfileNm="IA"+newfileNm_endfix; 
        //System.out.println("toPA..."+NewfileNm);
@@ -78,7 +109,7 @@ public class LifeInjuryModule {
        File[] files = oldDir.listFiles();//列出檔案 
        
        SNumberGenerator sn=new SNumberGenerator();//new file name Generator
-        for (File f : files) {//列舉一種新的陣列寫法 意同 for(int i=0;i<files.lengthi++){}
+        for (File f : files) {//列舉一種新的陣列寫法 意同 for(int i=0;i<files.length;i++){}
             System.out.println("files name:"+f.getName());
             String fname=f.getName();
            
@@ -92,12 +123,17 @@ public class LifeInjuryModule {
 //                        + f.getName());
 //                File destDemo = new File(distDir.getAbsolutePath() + "/"
 //                        + f.getName());
-                  UpNameArray[file_count]=sn.getNEW_File_Name();
+                up_file_list.add(sn.getNEW_File_Name());//set files name to ArrayList
+
                 ioDealer.moveFile(oldFileDest+ "/"+f.getName(),newFileDest+"/"+sn.getNEW_File_Name());//move files
+                
+            
             } 
             
-        }        
-       return UpNameArray;
+        }
+        
+  
+       return up_file_list;
    }     
    
    private void toMA(String oldFileDest,String newFileDest,String newfileNm_endfix){//取號number跟PA相同
@@ -122,10 +158,7 @@ public class LifeInjuryModule {
         //Step1.Module Process move file then mofify file name.
         //*******
         lifeInjuryModule.Process400();
-        //********
-        //Step2.Upload files to ftp
-        //*******
-        //FTPUploadController fTPUploadController = new FTPUploadController();
+
         
         
         //********
