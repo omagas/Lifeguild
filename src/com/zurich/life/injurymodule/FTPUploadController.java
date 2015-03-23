@@ -25,6 +25,7 @@ import org.apache.commons.net.ftp.FTPClient;
  */
 public class FTPUploadController {
     private String LocalFile;
+    private boolean completed;
 
     public String getLocalFile() {
         return LocalFile;
@@ -37,9 +38,17 @@ public class FTPUploadController {
     public FTPUploadController() {
 
     }
+
+    public boolean isCompleted() {
+        return completed;
+    }
+
+    public void setCompleted(boolean completed) {
+        this.completed = completed;
+    }
     
     
-    protected   void controller() throws FileNotFoundException, IOException{
+    protected void controller() throws FileNotFoundException, IOException{
         
         System.out.println(this.getClass().getName());
         Properties pt=new PropertiesTool().getProperties("ftpconfig.properties");
@@ -77,11 +86,11 @@ public class FTPUploadController {
 
                         // APPROACH #2: uploads second file using an OutputStream
                         File secondLocalFile = new File(preaperUpDirPath+this.LocalFile);
-                        System.out.println("..........secondLocalFile..prepare up load loc:"+secondLocalFile);
+                        System.out.println("..........LocalFile..prepare up load loc:"+secondLocalFile);
                         String secondRemoteFile = remoteDirPath_dir+"/"+this.LocalFile;
                         InputStream inputStream = new FileInputStream(secondLocalFile);
 
-                        System.out.println("Start uploading second file");
+                        System.out.println("Start uploading  file");
                         OutputStream outputStream = ftpClient.storeFileStream(secondRemoteFile);
 
                             //ftpClient.deleteFile("MA0001.txt");
@@ -96,7 +105,8 @@ public class FTPUploadController {
 
                         boolean completed = ftpClient.completePendingCommand();
                         if (completed) {
-                                System.out.println("The second file is uploaded successfully.");
+                                System.out.println("The  file is uploaded successfully.");
+                                setCompleted(completed);
                         }
 
 		} catch (IOException ex) {
@@ -111,7 +121,9 @@ public class FTPUploadController {
                         } catch (IOException ex) {
                                 ex.printStackTrace();
                         }
-		}        
+                        
+		}    
+               
     }
     
 }

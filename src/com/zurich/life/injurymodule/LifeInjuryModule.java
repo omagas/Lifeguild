@@ -46,6 +46,7 @@ public class LifeInjuryModule {
    private void Process400(){
        //int OldSerialNum=0;
        int NewSerialNum=0;
+       boolean isComplete=false;
        ArrayList<String> file_array_name;
        String oldFileDest ="D:/Life/400/SEND/";
        String newFileDest ="D:/Life/400/";
@@ -57,23 +58,25 @@ public class LifeInjuryModule {
        
        file_array_name=toIA(oldFileDest,newFileDest,NewSerialNum);//move file to 400/ prepare for uploading to life FTP
        toMA(oldFileDest,newFileDest,NewfileNm_endfix);
-       FTPUploadController fTPUploadController = new FTPUploadController();
-       
+       FTPUploadController Fuc = new FTPUploadController();
+
+            
+        //********
+        //Step2.Upload files to ftp
+        //*******       
        int count=0;
        for(String lists:file_array_name){//for list depend by num of files.
             
             count++;
             System.out.println("ArrayList.."+"["+count+"]"+lists);
             logger.info("ArrayList.."+"["+count+"]"+lists);
-            
-        //********
-        //Step2.Upload files to ftp
-        //*******
 
             try {
-                fTPUploadController.setLocalFile(lists);//set file name to fTPUploadController
-                fTPUploadController.controller();//exe fTPUploadController
-                
+                Fuc.setLocalFile(lists);//set file name to fTPUploadController
+                Fuc.controller();//exe fTPUploadController
+                isComplete=Fuc.isCompleted();
+                System.out.println(">>>>>>>>>FINISH UPLOADING TO FTP<<<<<<<<<");
+                logger.info(">>>>>>>>>FINISH UPLOADING TO FTP<<<<<<<<<");                
             } catch (FileNotFoundException ex) {
                 java.util.logging.Logger.getLogger(LifeInjuryModule.class.getName()).log(Level.SEVERE, null, ex);
             } catch (IOException ex) {
@@ -85,18 +88,42 @@ public class LifeInjuryModule {
         //********
         //Step3.Sleep for a moment.
         //*******
-                try {
-                    System.out.println("I'm going to bed");
-                    Thread.sleep(10000);
-                    System.out.println("I wake up");
-                } catch (InterruptedException ex) {
-                    java.util.logging.Logger.getLogger(LifeInjuryModule.class.getName()).log(Level.SEVERE, null, ex);
-                }       
-
-        //********
-        //Step4.Download feedback files from ftp Location D:/Life/400/RESP
-        //*******
-        FTPDownloadController fTPDownloadController = new FTPDownloadController();        
+//                try {
+//                    System.out.println("I'm going to bed");
+//                    Thread.sleep(10000);
+//                    System.out.println("I wake up");
+//                } catch (InterruptedException ex) {
+//                    java.util.logging.Logger.getLogger(LifeInjuryModule.class.getName()).log(Level.SEVERE, null, ex);
+//                }    
+       
+       FTPListTestController Fltc=new FTPListTestController().getInstance();
+        try {
+            if(isComplete){
+                System.out.println("Confirm the file uploaded.");
+                Fltc.WaitTilFileReady();
+                System.out.println(">>>>>>>>>FINISH CONFIRMING MA OA IN FTP<<<<<<<<<");
+                logger.info(">>>>>>>>>FINISH CONFIRMING MA OA IN FTP<<<<<<<<<");
+            } else{
+                System.out.println("File didn't upload.");
+            }
+ 
+        } catch (FileNotFoundException ex) {
+            java.util.logging.Logger.getLogger(LifeInjuryModule.class.getName()).log(Level.SEVERE, null, ex);
+            logger.info(ex);
+        } catch (IOException ex) {
+            java.util.logging.Logger.getLogger(LifeInjuryModule.class.getName()).log(Level.SEVERE, null, ex);
+            logger.info(ex);
+        } catch (InterruptedException ex) {
+            java.util.logging.Logger.getLogger(LifeInjuryModule.class.getName()).log(Level.SEVERE, null, ex);
+            logger.info(ex);
+        }
+        
+             //********
+             //Step4.Download feedback files from ftp Location D:/Life/400/RESP
+             //*******
+             new FTPDownloadController();   
+             System.out.println(">>>>>>>>>FINISH PROCESS400<<<<<<<<<");
+             logger.info(">>>>>>>>>FINISH PROCESS400<<<<<<<<<");             
        
        
          
